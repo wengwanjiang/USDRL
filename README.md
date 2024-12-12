@@ -1,5 +1,5 @@
 # USDRL: Unified Skeleton-Based Dense Representation Learning with Multi-Grained Feature Decorrelation
-**This is a repository containing the implementation of our AAAI 2025 paper USDRL.** [[Paper Link]](https://arxiv.org/abs/2308.03975) [[Project Link]]([wengwanjiang/USDRL](https://github.com/wengwanjiang/USDRL))
+**This is a repository containing the implementation of our AAAI 2025 paper USDRL.** [[Paper Link]](https://arxiv.org/abs/) [[Github]]([wengwanjiang/USDRL](https://github.com/wengwanjiang/USDRL))
 
 ![](./images/pipe.jpg)
 
@@ -74,6 +74,12 @@ coming soon
 If you find this work useful for your research, please consider citing our work:
 
 ```
+@inproceedings{wengUSDRL25,
+  title={USDRL: Unified Skeleton-Based Dense Representation Learning with Multi-Grained Feature Decorrelation},
+  author={Wanjiang Weng and Hongsong Wang and Junbo Wang and Lei He and Guosen Xie},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2025}
+}
 ```
 
 
