@@ -20,7 +20,7 @@ Please refer to [UmURL](https://github.com/HuiGuanLab/UmURL)
 
 ## Training and Testing
 
-Unsupervised Pretraining at scripts/pretrain.sh:
+Unsupervised Pretraining Script (scripts/pretrain.sh):
 
 ```
 # bash scripts/pretrain.sh 0,1 ntu60_xs_j_dste
@@ -32,7 +32,7 @@ CUDA_VISIBLE_DEVICES="$gpu" python pretrain.py --lr 0.0005   --batch-size 356  -
  --pre-dataset ntu60 --protocol cross_subject | tee -a ./checkpoint/${dir}/${dir}_pretrain.log
 ```
 
-Test on linear action classification at scripts/recog.sh:
+Linear Action Recognition Scritp (scripts/recog.sh):
 
 ```
 # bash scripts/recog.sh 0 ntu60_xs_j_dste 45
@@ -45,7 +45,7 @@ CUDA_VISIBLE_DEVICES="${gpu}" python action_recognition.py \
   --finetune-dataset ntu60 --protocol cross_subject | tee -a ./checkpoint/${dir}/${dir}_recog.log
 ```
 
-Test on Action Retrieval at scripts/recog.sh:
+Action Retrieval (KNN-1) Scritp (scripts/knn.sh):
 ```
 # bash scripts/knn.sh 0 ntu60_xs_j_dste 45
 gpu=0 #$1
@@ -58,7 +58,7 @@ CUDA_VISIBLE_DEVICES="${gpu}" python action_retrieval.py \
 ```
 
 Test on Action Detection
-Please Refer to our detection [repo](https://github.com/JHang2020/Simple-Skeleton-Detection/tree/main) due to the difference of codebase.
+Please Refer to the detection [repo](https://github.com/JHang2020/Simple-Skeleton-Detection/tree/main) due to the difference of codebase.
 
 More streams can refer to **script/\*.sh**.
 
@@ -67,20 +67,13 @@ More streams can refer to **script/\*.sh**.
 coming soon
 ### Main Results
 
-![](./images/res.png)
+![](./images/linear.jpg)
 
 ## Citation
 
 If you find this work useful for your research, please consider citing our work:
 
 ```
-@inproceedings{zhang2023prompted,
-  title={Prompted Contrast with Masked Motion Modeling: Towards Versatile 3D Action Representation Learning},
-  author={Zhang, Jiahang and Lin, Lilang and Liu, Jiaying},
-  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
-  pages={7175--7183},
-  year={2023}
-}
 ```
 
 
