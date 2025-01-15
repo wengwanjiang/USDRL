@@ -63,8 +63,8 @@ Please Refer to the detection [repo](https://github.com/JHang2020/Simple-Skeleto
 More streams can refer to **script/\*.sh**.
 
 ## Pretrained Models
+Our pretrained models are available at [Pretrained Models](https://1drv.ms/f/c/70b7af2ab29b610a/Egphm7Iqr7cggHCSGQAAAAABdPcAKO3R5oucQPZH-L8qvA?e=XQYoI0)
 
-coming soon
 ### Main Results
 
 ![](./images/linear.jpg)
